@@ -24,12 +24,17 @@ This is a simple full-stack Inventory Manager project built using:
 
 ```
 project/
-├── app.py              # Flask backend server
-├── db_config.py        # MySQL credentials
+├── app.py # Flask backend server
+├── db_config.py # MySQL credentials
 ├── templates/
-│   └── index.html      # Web frontend (Bootstrap UI)
-├── README.md           # Project setup & documentation
-├── API_DOC.md          # Full API documentation
+│ └── index.html # Web frontend (Bootstrap UI)
+├── tests/
+│ ├── test_api.py # API + integration tests
+│ └── test_unit.py # Unit tests
+├── API_DOC.md # Full API documentation
+├── README.md # Project setup & usage
+├── Screenshots/
+│ └── Coverage.jpg # Test coverage screenshot
 ```
 
 ---
@@ -116,6 +121,34 @@ curl -X DELETE http://localhost:5000/api/items/1
 ➡️ For full API reference, see [`API_DOC.md`](API_DOC.md)
 
 ---
+## 🧪 Testing Overview
+
+### ✅ Testing Frameworks Used:
+
+| Tool                | Purpose                             |
+|---------------------|-------------------------------------|
+| `unittest`          | Python’s built-in test framework    |
+| `unittest.mock`     | Mocking DB for isolated unit tests  |
+| `Flask test client` | Simulate API requests               |
+| `coverage`          | Code coverage tracking              |
+
+---
+### 🧪 Running Tests
+
+This project includes unit, integration, and API tests using Python’s built-in `unittest` and `coverage`.
+
+### Run all tests:
+```bash
+python -m unittest discover tests
+coverage run -m unittest discover tests
+coverage report -m
+
+
+```
+### 🧪 Test Coverage
+
+![Test Coverage](Screenshots/Coverage.jpg)
+
 
 ## 👤 Author
 
