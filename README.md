@@ -149,6 +149,10 @@ coverage report -m
 
 ![Test Coverage](Screenshots/Coverage.jpg)
 
+### 🧪  HTML Test Coverage
+
+![Test Coverage](Screenshots/Coverage-HTML.jpg)
+
 
 ## 👤 Author
 
