@@ -31,6 +31,7 @@ project/
 ├── tests/
 │ ├── test_api.py # API + integration tests
 │ └── test_unit.py # Unit tests
+| |__ test_integration.py
 ├── API_DOC.md # Full API documentation
 ├── README.md # Project setup & usage
 ├── Screenshots/
