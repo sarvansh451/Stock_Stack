@@ -148,7 +148,7 @@ coverage report -m
 ```
 ### 🧪 Test Coverage
 
-![Test Coverage](Screenshots/Coverage.jpg)
+![Test Coverage](Screenshots/CoverageofTests.jpg)
 
 ### 🧪  HTML Test Coverage
 
