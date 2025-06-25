@@ -8,7 +8,7 @@ class IntegrationTestCase(unittest.TestCase):
         self.client = self.app.test_client()
         self.app.testing = True
 
-        # ✅ Use Flask application context
+   
         with self.app.app_context():
             cur = mysql.connection.cursor()
             cur.execute("DELETE FROM items")
@@ -16,7 +16,7 @@ class IntegrationTestCase(unittest.TestCase):
             cur.close()
 
     def test_crud_flow(self):
-        # ✅ Wrap inside context because we'll hit DB
+      
         with self.app.app_context():
             # 1. Create item (POST)
             res = self.client.post('/api/items', json={
