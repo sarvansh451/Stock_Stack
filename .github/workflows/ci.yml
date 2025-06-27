@@ -1,0 +1,29 @@
+name: Keploy CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  keploy-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install Keploy CLI
+      run: |
+        curl --silent -L https://keploy.io/ent/install.sh | bash
+
+    - name: Run Keploy Test Suite
+      run: |
+        export KEPLOY_API_KEY=${{ secrets.KEPLOY_API_KEY }}
+        keploy test-suite --app=8c4d7de8-39a6-4a92-a991-6905c1d63c75 --base-path https://99d4-2409-40d4-10b1-4eb7-75dc-988b-a815-5da0.ngrok-free.app --cloud
