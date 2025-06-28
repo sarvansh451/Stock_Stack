@@ -159,7 +159,7 @@ coverage report -m
 
 
 ###🧪 CI/CD configuration file
-[CI/CD File](https://github.com/your-username/your-repo-name/blob/main/.github/workflows/workflow.yml)
+[CI/CD File](https://github.com/sarvansh451/Stock_Stack/blob/main/.github/workflows/ci.yml)
 
 ## 👤 Author
 
