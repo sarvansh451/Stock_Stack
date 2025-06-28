@@ -25,5 +25,5 @@ jobs:
 
     - name: Run Keploy Test Suite
       run: |
-        export KEPLOY_API_KEY=${{ secrets.KEPLOY_API_KEY }}
-        keploy test-suite --app=8c4d7de8-39a6-4a92-a991-6905c1d63c75 --base-path https://99d4-2409-40d4-10b1-4eb7-75dc-988b-a815-5da0.ngrok-free.app --cloud
+         export KEPLOY_API_KEY=${{ secrets.KEPLOY_API_KEY }}
+         keploy test-suite --app=8c4d7de8-39a6-4a92-a991-6905c1d63c75 --base-path https://bddb-2409-40d4-10b1-4eb7-7c9c-e526-5159-ebb.ngrok-free.app --cloud
