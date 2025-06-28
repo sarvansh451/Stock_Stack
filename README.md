@@ -154,6 +154,12 @@ coverage report -m
 
 ![Test Coverage](Screenshots/Coverage-HTML.jpg)
 
+### ✅ Test Report Screenshot
+![Keploy Test Report](Screenshots/TestReportKeploy.jpg)
+
+
+###🧪 CI/CD configuration file
+[CI/CD File](https://github.com/your-username/your-repo-name/blob/main/.github/workflows/workflow.yml)
 
 ## 👤 Author
 
