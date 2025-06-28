@@ -157,6 +157,9 @@ coverage report -m
 ### ✅ Test Report Screenshot
 ![Keploy Test Report](Screenshots/TestReportKeploy.jpg)
 
+### ✅ Test Suite Summary
+![Keploy Test Report](Screenshots/TestSuiteSummary.jpg)
+
 
 ###🧪 CI/CD configuration file
 [CI/CD File](https://github.com/sarvansh451/Stock_Stack/blob/main/.github/workflows/ci.yml)
